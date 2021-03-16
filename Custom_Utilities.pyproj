@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6d96c409-3a5e-48a3-be60-1ff78c8258fb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Custom_Utilities.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +22,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Custom_Utilities.py" />
+    <Folder Include="custom_utilities_pkg\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="custom_utilities_pkg\common.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="custom_utilities_pkg\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
